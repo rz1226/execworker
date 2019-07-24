@@ -1,0 +1,20 @@
+# github.com/buaazp/fasthttprouter v0.1.1
+github.com/buaazp/fasthttprouter
+# github.com/klauspost/compress v1.4.0
+github.com/klauspost/compress/flate
+github.com/klauspost/compress/gzip
+github.com/klauspost/compress/zlib
+# github.com/klauspost/cpuid v0.0.0-20180405133222-e7e905edc00e
+github.com/klauspost/cpuid
+# github.com/rz1226/simplegokit v0.0.0-20190723121830-e00135450d9e
+github.com/rz1226/simplegokit/httpkit
+github.com/rz1226/simplegokit/blackboardkit
+github.com/rz1226/simplegokit/kits
+# github.com/rz1226/utilx2 v0.0.0-20190723122009-d67b5e5e7490
+github.com/rz1226/utilx2/randx
+# github.com/valyala/bytebufferpool v1.0.0
+github.com/valyala/bytebufferpool
+# github.com/valyala/fasthttp v1.4.0
+github.com/valyala/fasthttp
+github.com/valyala/fasthttp/fasthttputil
+github.com/valyala/fasthttp/stackless
