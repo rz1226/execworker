@@ -17,32 +17,31 @@ func Run(ctx *fasthttp.RequestCtx) string {
 	if err != nil {
 		return API_JOBERR
 	}
-	fmt.Println(result )
+	fmt.Println(result)
 	if len(result) == 0 {
 		return API_JOBERR
 	}
-	command ,ok := result[0].(string)
-	if !ok{
+	command, ok := result[0].(string)
+	if !ok {
 		return API_JOBERR
 	}
 	var args []interface{}
 
-	if len(result)>1{
+	if len(result) > 1 {
 		args = result[1:]
 	}
 
 	var argsStr []string
-	for _, v := range args{
-		argsStr = append( argsStr, fmt.Sprint( v ))
+	for _, v := range args {
+		argsStr = append(argsStr, fmt.Sprint(v))
 	}
 
-
-	cmd := exec.Command( command, argsStr... )
+	cmd := exec.Command(command, argsStr...)
 	go run(cmd)
 	return API_OK
 }
 
-func run(cmd *exec.Cmd){
+func run(cmd *exec.Cmd) {
 	x := runner.NewRunner(cmd)
 	x.Run()
 }

@@ -1,17 +1,15 @@
 package api
 
 import (
-
 	"fmt"
 	"github.com/valyala/fasthttp"
 )
 
 //本包的公用函数
 
-
 const (
-	API_OK    = `{"code":0,"msg":"ok"}`
-	API_PANIC = `{"code":40,"msg":"server error"}`
+	API_OK     = `{"code":0,"msg":"ok"}`
+	API_PANIC  = `{"code":40,"msg":"server error"}`
 	API_JOBERR = `{"code":41,"msg":"json error"}`
 )
 
